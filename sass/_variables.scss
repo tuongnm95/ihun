@@ -1,0 +1,48 @@
+// set width cho cột cho flex
+@mixin col-w($width) {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 $width;
+  flex: 0 0 $width;
+  max-width: $width;
+}
+
+@mixin absoluteCenter($direction: "left") {
+  position: absolute;
+
+  @if $direction=="left" {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @if $direction=="top" {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @if $direction=="both" {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin maxWidth($val) {
+  @media (max-width: $val) {
+    @content;
+  }
+}
+
+@mixin minWidth($val) {
+  @media (min-width: $val) {
+    @content;
+  }
+}
+
+$text-primary: #2E2E2E;
+$color-primary: #469292;
+$param : #505050;

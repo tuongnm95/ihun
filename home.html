@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="app">
+    <my-header></my-header>
+    <main>
+      <section class="banner-home" style="background-image: url('images/banner-home.png');">
+        <div class="container">
+          <div class="banner-home-content">
+            <h1>Đảm bảo tương lai của bạn từ hôm nay.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur
+              sed, convallis at tellus.</p>
+            <div class="banner-search position-relative">
+              <input type="text" class="form-control" placeholder="Bạn đang tìm khóa học gì....">
+              <a href="" class="btn-search">Tìm kiếm</a>
+              <div class="icon-search">
+                <img src="images/icon-search.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <section class="policy-section">
+          <div class="row">
+            <div class="col-md-6 col-xl-3">
+              <div class="policy-item">
+                <img src="images/policy-icon1.svg" alt="">
+                <h3>Dịch vụ chất lượng</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nemo ut deserunt, cupiditate
+                  unde porro.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="policy-item">
+                <img src="images/policy-icon2.svg" alt="">
+                <h3>Đào tạo uy tín</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, iusto!</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="policy-item">
+                <img src="images/policy-icon4.svg" alt="">
+                <h3>Đảm bảo đầu ra </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="policy-item">
+                <img src="images/policy-icon3.svg" alt="">
+                <h3>Hỗ trợ 24/7</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="promotion-section">
+          <h3 class="title-head text-center font-weight-bold">Top khóa học ưu đãi</h3>
+          <div class="promotion-slide owl-carousel owl-theme js-carousel" data-items-xxs="1" data-items-sm="2"
+            data-items-md="3" data-items="3" data-autoplay="false" data-loop="true" data-arrow="true" data-dots="true">
+            <div class="promotion-item" v-for="n in 6">
+              <div class="image">
+                <a href=""><img src="images/promotion-1.png" alt=""></a>
+                <div class="tag tag-discount">30%</div>
+              </div>
+              <div class="desc">
+                <div class="desc-icon"><a href=""><img src="images/lg-sm.png" alt=""></a></div>
+                <div class="desc-content">
+                  <a href="" class="title">Khóa học bảo hiểm doanh nhân Giúp bạn tự tin khi gặp </a>
+                  <div class="author">Giảng viên : Vũ Văn Sơn</div>
+                  <div class="price">119.000 đ <span>180.000 đ</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="promotion-item">
+              <div class="image">
+                <a href=""><img src="images/promotion-1.png" alt=""></a>
+                <div class="tag tag-free">Miễn phí </div>
+              </div>
+              <div class="desc">
+                <div class="desc-icon"><a href=""><img src="images/lg-sm.png" alt=""></a></div>
+                <div class="desc-content">
+                  <a href="" class="title">Khóa học bảo hiểm </a>
+                  <div class="author">Giảng viên : Vũ Văn Sơn</div>
+                  <div class="price">Miễn Phí</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="find-course-section">
+          <img src="images/img-flash.png" alt="">
+          <div class="text-center text-md-left">
+            <div class="content">
+              <h3><span>Hãy để chúng tôi giúp bạn</span> Tìm khóa học phù hợp cho bạn</h3>
+              <a href="" class="btn-find">bắt đầu thôi</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="introduce-section">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#menu0"><span>Về chúng tôi</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu1"><span>khóa học của chúng tôi</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu2"><span>Đem lại cho bạn</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu3"><span>Bạn sẽ nhận được</span></a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="menu0" class="tab-pane active"><br>
+              <div class="content">
+                <h3>Tạo cho họ một lời đề nghị mà họ không thể từ chối.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua.</p>
+                <img src="images/img-logo.png" alt="">
+              </div>
+              <img src="images/img-intro.png" alt="">
+            </div>
+            <div id="menu1" class="tab-pane fade"><br>
+              <div class="content">
+                <h3>Tạo cho họ một lời đề nghị mà họ không thể từ chối.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua.</p>
+                <img src="images/img-logo.png" alt="">
+              </div>
+              <img src="images/img-intro.png" alt="">
+            </div>
+            <div id="menu2" class="tab-pane fade"><br>
+              <div class="content">
+                <h3>Tạo cho họ một lời đề nghị mà họ không thể từ chối.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua.</p>
+                <img src="images/img-logo.png" alt="">
+              </div>
+              <img src="images/img-intro.png" alt="">
+            </div>
+            <div id="menu3" class="tab-pane fade"><br>
+              <div class="content">
+                <h3>Tạo cho họ một lời đề nghị mà họ không thể từ chối.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua.</p>
+                <img src="images/img-logo.png" alt="">
+              </div>
+              <img src="images/img-intro.png" alt="">
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <my-footer></my-footer>
+  </div>
+
+  <script src="js/vue.js"></script>
+  <script src="js/httpVueLoader.js"></script>
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="libs/bootstrap/popper.min.js"></script>
+  <script src="libs/bootstrap/bootstrap.min.js"></script>
+  <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+  <script>
+    var app = new Vue({
+      el: "#app",
+      components: {
+        "my-header": httpVueLoader("vue_components/header.vue"),
+        "my-footer": httpVueLoader("vue_components/footer.vue"),
+      },
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
